@@ -1,0 +1,3 @@
+/*
+* javascript for duo-time
+*/
