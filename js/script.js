@@ -11,7 +11,7 @@ function flip() {
     chaser.style.backgroundColor = randomColor;
     counter ++;
     chaser.style.left= parseInt(chaser.style.left) +50 +"px";
-    if (counter < 10) {
+    if (counter < 20) {
         setTimeout(flip, 1000);
     }
 };
@@ -23,5 +23,17 @@ chaser.addEventListener("click", function () {
 
 document.getElementsByClassName("colorBox")[0].style.backgroundColor= 'coral';
 document.getElementsByClassName("lead")[0].style.height='50px';
-let images= document.getElementsByTagName("img")[4].src='./img/Nicole_Kidman.jpg'
-console.log(images);
+let bigText= document.getElementsByClassName("display-5")
+    bigText[2].style.height='110px';
+    bigText[3].style.height='110px';
+
+let images = document.getElementsByTagName("img");
+images[4].src='./img/Nicole_Kidman.jpg';
+images[4].style.width= "350px";
+images[4].style.height= "412px";
+images[1].src='./img/kitten.jpg';
+images[1].style.width= "350px";
+images[1].style.height= "412px";
+
+
+//console.log(images);
