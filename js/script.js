@@ -5,32 +5,38 @@ chaser.style.position = 'absolute';
 chaser.style.left = "50px";
 chaser.style.top = "250px";
 
+
 function flip() {
     let randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     chaser.style.transform = 'rotate(90deg)';
     chaser.style.backgroundColor = randomColor;
     counter ++;
-    chaser.style.left= parseInt(chaser.style.left) +50 +"px";
-
-    if (counter < 7) {
+    if (counter < 9) {
+        chaser.style.left= parseInt(chaser.style.left) +50 +"px";
         setTimeout(flip, 100);
         chaser.style.top= parseInt(chaser.style.top) +50 +"px";
-    }else if (counter >= 7 && counter <13) {
+    }else if (counter >= 9 && counter <16) {
+        chaser.style.left= parseInt(chaser.style.left) +50 +"px";
         setTimeout(flip, 100);
         chaser.style.top= parseInt(chaser.style.top) -50 +"px";
-    }else if (counter >= 13 && counter <19) {
+    }else if (counter >= 16 && counter <23) {
+        chaser.style.left= parseInt(chaser.style.left) +50 +"px";
         setTimeout(flip, 100);
         chaser.style.top= parseInt(chaser.style.top) +50 +"px";
-    }else if (counter >= 19 && counter <23){
+    }else if (counter >= 23 && counter <25){
+        chaser.style.left= parseInt(chaser.style.left) +50 +"px";
         setTimeout(flip, 100);
         chaser.style.top= parseInt(chaser.style.top) -50 +"px";
     }
+
 console.log(counter)
 };
 
 chaser.addEventListener("click", function () {
     counter=0
     flip()
+    chaser.style.left = "50px";
+    chaser.style.top = "250px";
 });
 
 document.getElementsByClassName("display-4")[1].style.color='darksalmon';
