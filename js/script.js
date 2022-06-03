@@ -11,7 +11,7 @@ function flip() {
     chaser.style.backgroundColor = randomColor;
     counter ++;
     chaser.style.left= parseInt(chaser.style.left) +50 +"px";
-    if (counter < 20) {
+    if (counter < 22) {
         setTimeout(flip, 1000);
     }
 };
@@ -21,8 +21,8 @@ chaser.addEventListener("click", function () {
     flip()
 });
 
-let colorBox=document.getElementsByClassName("colorBox");
 
+let colorBox=document.getElementsByClassName("colorBox");
 colorBox[0].style.backgroundColor= 'salmon';
 colorBox[0].style.height= "500px";
 colorBox[0].style.width= "350px";
@@ -31,7 +31,17 @@ colorBox[0].style.borderBottomRightRadius= "25px";
 
 let lead=document.getElementsByClassName("lead");
     lead[0].style.height='50px';
-    lead[1]
+    lead[1].style.height='50px';
+    lead[2].style.height='50px';
+    lead[3].style.height='50px';
+    lead[4].style.height='50px';
+    lead[1].innerHTML = 'My favourite color is salmon';
+    lead[1].innerHTML = 'My favourite color is salmon';
+    lead[2].insertAdjacentText('beforeend', ' I do like dogs, but we have 2 cats');
+    lead[3].textContent= 'I do like a lot of sports. Formerly I preferred more active sports like pencak-silat. Now I try to do some yoga';
+    lead[4].textContent= 'I like Snow White but I like Hermeline better';
+    lead[5].textContent= "I don't have a favourite celebrity, but I like Nicole Kidman";
+    lead[6].textContent= 'I might want to see Pride and prejudice, but I like The Others';
 console.log(lead)
 
 let bigText= document.getElementsByClassName("display-5")
@@ -47,6 +57,7 @@ images[1].style.width='350px';
 images[1].style.height='500px';
 images[2].style.height='500px';
 images[2].style.width= '350px';
+images[3].src='./img/hermeline.jpg';
 images[3].style.height='500px';
 images[3].style.width='350px';
 images[5].src='./img/theOthers.jpg';
@@ -61,7 +72,7 @@ shadowBox[2].style.height='500px';
 shadowBox[3].style.heigth='500px';
 shadowBox[4].style.height='500px';
 shadowBox[5].style.height='500px';
-document.getElementsByClassName("greetImg shadow-sm d-none d-md-block")[0].style.backgroundColor='# 248,249,250';
+document.getElementsByClassName("greetImg shadow-sm d-none d-md-block")[0].style.backgroundColor='#248,249,200';
 
 /*let bigBox=document.getElementsByClassName("me-md-3");
 bigBox[0].style.display='900px';
