@@ -12,3 +12,5 @@ https://snehalchetan.github.io/duo_time/
 [x] change pictures
     [x] search new images
     [x] adapt size of the new images
+
+[] adept the size of all original images

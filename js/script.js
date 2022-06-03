@@ -21,7 +21,11 @@ chaser.addEventListener("click", function () {
     flip()
 });
 
-document.getElementsByClassName("colorBox")[0].style.backgroundColor= 'coral';
+let colorBox=document.getElementsByClassName("colorBox");
+
+colorBox[0].style.backgroundColor= 'coral';
+colorBox[0].style.height= "412px";
+colorBox[0].style.width= "350px";
 document.getElementsByClassName("lead")[0].style.height='50px';
 let bigText= document.getElementsByClassName("display-5")
     bigText[2].style.height='110px';
@@ -33,7 +37,21 @@ images[4].style.width= "350px";
 images[4].style.height= "412px";
 images[1].src='./img/kitten.jpg';
 images[1].style.width= "350px";
-images[1].style.height= "412px";
+images[2].style.height= "412px";
+images[2].style.width= "350px";
+images[3].style.height= "412px";
+images[3].style.width= "350px";
+images[5].style.height= "412px";
+images[5].style.width= "350px";
 
+let shadowBox=document.getElementsByClassName("shadowBox");
+shadowBox[1].style.height ='500px';
+shadowBox[2].style.display='500px';
+shadowBox[3].style.display='500px';
+shadowBox[4].style.display='500px';
+shadowBox[5].style.display='500px';
 
+let bigBox=document.getElementsByClassName("me-md-3");
+
+console.log('shadowBox',shadowBox);
 //console.log(images);
