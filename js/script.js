@@ -21,9 +21,9 @@ chaser.addEventListener("click", function () {
     flip()
 });
 
-
+document.body.style.backgroundColor='burlywood'
 let colorBox=document.getElementsByClassName("colorBox");
-colorBox[0].style.backgroundColor= 'salmon';
+colorBox[0].style.backgroundColor= 'darksalmon';
 colorBox[0].style.height= "500px";
 colorBox[0].style.width= "350px";
 colorBox[0].style.borderBottomLeftRadius= "25px";
@@ -69,10 +69,19 @@ let shadowBox=document.getElementsByClassName("shadowBox");
 shadowBox[0].style.height ='500px';
 shadowBox[1].style.height ='500px';
 shadowBox[2].style.height='500px';
+shadowBox[1].style.borderBottomRightRadius= "25px";
+shadowBox[1].style.borderBottomLeftRadius= "25px";
+shadowBox[2].style.borderBottomRightRadius= "25px";
+shadowBox[2].style.borderBottomLeftRadius= "25px";
 shadowBox[3].style.heigth='500px';
 shadowBox[4].style.height='500px';
+shadowBox[4].style.borderBottomRightRadius= "25px";
+shadowBox[4].style.borderBottomLeftRadius= "25px";
 shadowBox[5].style.height='500px';
-document.getElementsByClassName("greetImg shadow-sm d-none d-md-block")[0].style.backgroundColor='#248,249,200';
+shadowBox[5].style.borderBottomRightRadius= "25px";
+shadowBox[5].style.borderBottomLeftRadius= "25px";
+//document.getElementsByClassName("greetImg shadow-sm d-none d-md-block")[0].style.backgroundColor='#248,249,250';
+
 
 /*let bigBox=document.getElementsByClassName("me-md-3");
 bigBox[0].style.display='900px';
