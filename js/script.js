@@ -11,9 +11,21 @@ function flip() {
     chaser.style.backgroundColor = randomColor;
     counter ++;
     chaser.style.left= parseInt(chaser.style.left) +50 +"px";
-    if (counter < 22) {
+
+    if (counter < 7) {
         setTimeout(flip, 1000);
+        chaser.style.top= parseInt(chaser.style.top) +50 +"px";
+    }else if (counter >= 7 && counter <13) {
+        setTimeout(flip, 1000);
+        chaser.style.top= parseInt(chaser.style.top) -50 +"px";
+    }else if (counter >= 13 && counter <19) {
+        setTimeout(flip, 1000);
+        chaser.style.top= parseInt(chaser.style.top) +50 +"px";
+    }else if (counter >= 19 && counter <23){
+        setTimeout(flip, 1000);
+        chaser.style.top= parseInt(chaser.style.top) -50 +"px";
     }
+console.log(counter)
 };
 
 chaser.addEventListener("click", function () {
@@ -94,6 +106,6 @@ shadowBox[5].style.height='500px';
 shadowBox[5].style.borderBottomRightRadius= "25px";
 shadowBox[5].style.borderBottomLeftRadius= "25px";
 document.getElementsByClassName('greetImg shadow-sm d-none d-md-block')[0].style.backgroundColor='burlywood';
-document.getElementsByClassName('greetImg')[0].style.height ="550px"
+document.getElementsByClassName('greetImg')[0].style.height ="550px";
 
 
