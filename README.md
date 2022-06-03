@@ -2,6 +2,7 @@
 make assigned partner's portfolio without getting info from them
 
 https://snehalchetan.github.io/duo_time/
+https://github.com/SnehalChetan/duo_time.git
 
 [x]flip dot
 [x] change color dot
