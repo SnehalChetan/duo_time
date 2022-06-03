@@ -13,16 +13,16 @@ function flip() {
     chaser.style.left= parseInt(chaser.style.left) +50 +"px";
 
     if (counter < 7) {
-        setTimeout(flip, 1000);
+        setTimeout(flip, 100);
         chaser.style.top= parseInt(chaser.style.top) +50 +"px";
     }else if (counter >= 7 && counter <13) {
-        setTimeout(flip, 1000);
+        setTimeout(flip, 100);
         chaser.style.top= parseInt(chaser.style.top) -50 +"px";
     }else if (counter >= 13 && counter <19) {
-        setTimeout(flip, 1000);
+        setTimeout(flip, 100);
         chaser.style.top= parseInt(chaser.style.top) +50 +"px";
     }else if (counter >= 19 && counter <23){
-        setTimeout(flip, 1000);
+        setTimeout(flip, 100);
         chaser.style.top= parseInt(chaser.style.top) -50 +"px";
     }
 console.log(counter)
