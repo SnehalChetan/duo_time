@@ -21,6 +21,9 @@ chaser.addEventListener("click", function () {
     flip()
 });
 
+document.getElementsByClassName("display-4")[0].style.fontcolor='darksalmon'
+document.getElementsByClassName("display-4")[0].style.fontcolor=''
+
 document.body.style.backgroundColor='burlywood'
 let colorBox=document.getElementsByClassName("colorBox");
 colorBox[0].style.backgroundColor= 'darksalmon';
