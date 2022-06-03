@@ -11,9 +11,21 @@ function flip() {
     chaser.style.backgroundColor = randomColor;
     counter ++;
     chaser.style.left= parseInt(chaser.style.left) +50 +"px";
-    if (counter < 22) {
+
+    if (counter < 7) {
         setTimeout(flip, 1000);
+        chaser.style.top= parseInt(chaser.style.top) +50 +"px";
+    }else if (counter >= 7 && counter <13) {
+        setTimeout(flip, 1000);
+        chaser.style.top= parseInt(chaser.style.top) -50 +"px";
+    }else if (counter >= 13 && counter <19) {
+        setTimeout(flip, 1000);
+        chaser.style.top= parseInt(chaser.style.top) +50 +"px";
+    }else if (counter >= 19 && counter <23){
+        setTimeout(flip, 1000);
+        chaser.style.top= parseInt(chaser.style.top) -50 +"px";
     }
+console.log(counter)
 };
 
 chaser.addEventListener("click", function () {
@@ -21,8 +33,18 @@ chaser.addEventListener("click", function () {
     flip()
 });
 
-document.getElementsByClassName("display-4")[0].style.fontcolor='darksalmon'
-document.getElementsByClassName("display-4")[0].style.fontcolor=''
+document.getElementsByClassName("display-4")[1].style.color='darksalmon';
+document.getElementsByClassName("display-4 fw-normal")[0].style.color='darksalmon';
+document.getElementsByClassName("lead")[0].style.color='burlywood';
+document.getElementsByClassName("lead")[1].style.color='darksalmon';
+document.getElementsByClassName("lead")[2].style.color='burlywood';
+document.getElementsByClassName("lead")[3].style.color='burlywood';
+document.getElementsByClassName("lead")[4].style.color='darksalmon';
+document.getElementsByClassName("lead")[5].style.color='burlywood';
+document.getElementsByClassName("lead")[6].style.color='burlywood';
+
+
+//document.getElementsByClassName("display-4")[0].style.fontcolor=''
 
 document.body.style.backgroundColor='burlywood'
 let colorBox=document.getElementsByClassName("colorBox");
@@ -45,7 +67,7 @@ let lead=document.getElementsByClassName("lead");
     lead[4].textContent= 'I like Snow White but I like Hermeline better';
     lead[5].textContent= "I don't have a favourite celebrity, but I like Nicole Kidman";
     lead[6].textContent= 'I might want to see Pride and prejudice, but I like The Others';
-console.log(lead)
+
 
 let bigText= document.getElementsByClassName("display-5")
     bigText[2].style.height='110px';
@@ -66,7 +88,7 @@ images[3].style.width='350px';
 images[5].src='./img/theOthers.jpg';
 images[5].style.height='500px';
 images[5].style.width='350px';
-images[0].style.borderRadius='25px'
+images[0].style.borderRadius='50%'
 
 let shadowBox=document.getElementsByClassName("shadowBox");
 shadowBox[0].style.height ='500px';
@@ -83,12 +105,7 @@ shadowBox[4].style.borderBottomLeftRadius= "25px";
 shadowBox[5].style.height='500px';
 shadowBox[5].style.borderBottomRightRadius= "25px";
 shadowBox[5].style.borderBottomLeftRadius= "25px";
-//document.getElementsByClassName("greetImg shadow-sm d-none d-md-block")[0].style.backgroundColor='#248,249,250';
+document.getElementsByClassName('greetImg shadow-sm d-none d-md-block')[0].style.backgroundColor='burlywood';
+document.getElementsByClassName('greetImg')[0].style.height ="550px";
 
 
-/*let bigBox=document.getElementsByClassName("me-md-3");
-bigBox[0].style.display='900px';
-bigBox[1].style.display='900px';
-bigBox[2].style.display='900px';
-console.log('bigBox',bigBox);*/
-//console.log(images);
